@@ -12,7 +12,9 @@ $(document).ready(function() {
    $("#testjs").click(function(e) {
     $('.jumbotron h1').text("What in the world is that stupid Experience Chan thing.\n");
     $("#testjs").text("I AM BUTTON");
-    $(".jumbotron p").addClass("active");
+
+    //$(".jumbotron p").addClass("active");
+    $(".jumbotron p").toggleClass("active");
   });
 
 	// Add any additional listeners here
