@@ -23,6 +23,8 @@ $(document).ready(function() {
     //$(".jumbotron p").addClass("active");
     $(".jumbotron p").toggleClass("active");
 
+    $("a.thumbnail").click(projectClick);
+
   }
   );
 
@@ -44,5 +46,15 @@ function projectClick(e) { 
     } else {
      description.html("<p>Stop clicking on me! You just did it at " + (new Date()) + "</p>");
      //$(this).fadeOut();
+     for(var i = 0; i < 10 ; i++){
+        $("#testjs").fadeOut();
+        $("#testjs").fadeIn();
+        doThing();
+     }
     }
+}
+
+function doThing() {
+    $(".project img").fadeIn();
+    $(".project img").fadeOut();
 }
