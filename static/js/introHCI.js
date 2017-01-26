@@ -12,10 +12,13 @@ $(document).ready(function() {
    $("#testjs").click(function(e) {
     $('.jumbotron h1').text("What in the world is that stupid Experience Chan thing.\n");
     $("#testjs").text("I AM BUTTON");
+    $("#testjs").fadeOut();
 
     //$(".jumbotron p").addClass("active");
     $(".jumbotron p").toggleClass("active");
-  });
+
+  }
+  );
 
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
@@ -32,7 +35,8 @@ function projectClick(e) { 
     var description = $(containingProject).find(".project-description");
     if (description.length == 0) {
      $(containingProject).append("<div class='project-description'><p>Description of the project.</p></div>");
- } else {
+    } else {
      description.html("<p>Stop clicking on me! You just did it at " + (new Date()) + "</p>");
- }
+     //$(this).fadeOut();
+    }
 }
