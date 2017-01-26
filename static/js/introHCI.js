@@ -13,6 +13,12 @@ $(document).ready(function() {
     $('.jumbotron h1').text("What in the world is that stupid Experience Chan thing.\n");
     $("#testjs").text("I AM BUTTON");
     $("#testjs").fadeOut();
+    $("#testjs").fadeIn();
+    $("#testjs").fadeOut();
+    $("#testjs").fadeIn();
+    $("#testjs").fadeOut();
+    $("#testjs").fadeIn();
+    $("#testjs").fadeOut();
 
     //$(".jumbotron p").addClass("active");
     $(".jumbotron p").toggleClass("active");
